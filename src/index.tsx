@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import "./styles/normalize.css";
 import "@syncfusion/ej2-base/styles/bootstrap5.css";
 import "@syncfusion/ej2-react-grids/styles/bootstrap5.css";
 

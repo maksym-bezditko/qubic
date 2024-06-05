@@ -7,7 +7,7 @@ const summaryData = calculateSummaryData(IPO_BIDS_JSON_DATA);
 export const Summary = () => {
   return (
     <div>
-      <h2>Summary for MLM</h2>
+      <StyledH2>Summary for MLM</StyledH2>
 
       <StyledTable>
         <tbody>
@@ -103,7 +103,11 @@ export const Summary = () => {
 };
 
 const StyledTable = styled.table`
-  width: 300px;
+  width: 18rem;
+
+  * {
+    border-color: rgb(77, 90, 104) !important;
+  }
 `;
 
 const StyledTableRow = styled.tr`
@@ -112,24 +116,34 @@ const StyledTableRow = styled.tr`
 `;
 
 const StyledTopRow = styled(StyledTableRow)`
-  border-top: 1px solid #000;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 `;
 
 const StyledBottomRow = styled(StyledTableRow)`
-  border-bottom: 1px solid #000;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 `;
 
 const StyledMidRow = styled(StyledTableRow)`
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 `;
 
 const StyledTd = styled.td`
-  text-align: right;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  text-align: left;
+  padding: 0.5rem;
+  color: white !important;
+
+  b {
+    color: #03C1DB !important;
+  }
+`;
+
+const StyledH2 = styled.h2`
+  color: white !important;
+
+  padding-bottom: 1.5rem;
 `;

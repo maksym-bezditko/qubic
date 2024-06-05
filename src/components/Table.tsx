@@ -25,10 +25,10 @@ export const Table = <T,>({
   filterSettings = { type: "Excel", ignoreAccent: true },
 }: TableProps<T>) => {
   return (
-    <div>
-      {title && <h2>{title}</h2>}
+    <StyledWrapper>
+      {title && <StyledH2>{title}</StyledH2>}
 
-      <StyledGridComponent
+      <GridComponent
         dataSource={dataSource}
         allowSorting
         allowFiltering
@@ -49,13 +49,19 @@ export const Table = <T,>({
         </ColumnsDirective>
 
         <Inject services={[Sort, Filter]} />
-      </StyledGridComponent>
-    </div>
+      </GridComponent>
+    </StyledWrapper>
   );
 };
 
-const StyledGridComponent = styled(GridComponent)`
-  .e-gridcontent tr:nth-child(even) {
-    background-color: aliceblue;
+const StyledWrapper = styled.div`
+  * {
+    border-color: rgb(77, 90, 104) !important;
   }
+`;
+
+const StyledH2 = styled.h2`
+  color: white !important;
+
+  padding-bottom: 1.5rem;
 `;
