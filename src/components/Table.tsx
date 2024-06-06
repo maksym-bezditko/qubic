@@ -41,6 +41,8 @@ export const Table = <T,>({
               key={column.field}
               field={column.field}
               headerText={column.headerText}
+              allowResizing={column.allowResizing}
+              minWidth={column.minWidth}
               width={column.width}
               textAlign={column.textAlign}
               format={column.format}
@@ -56,12 +58,12 @@ export const Table = <T,>({
 
 const StyledWrapper = styled.div`
   * {
-    border-color: rgb(77, 90, 104) !important;
+    border-color: ${({ theme }) => theme.colors.border} !important;
   }
 `;
 
 const StyledH2 = styled.h2`
-  color: white !important;
+  color: ${({ theme }) => theme.colors.text} !important;
 
-  padding-bottom: 1.5rem;
+  padding-bottom: ${({ theme }) => theme.sizes[24]};
 `;

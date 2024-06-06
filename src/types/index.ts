@@ -16,8 +16,10 @@ export interface Bid {
 export type Column = {
   field: string;
   headerText: string;
-  width?: string;
+  width?: string | number;
   textAlign: "Left" | "Right" | "Center";
+  allowResizing?: boolean;
+  minWidth?: string | number;
   format?: string;
 };
 

@@ -103,10 +103,10 @@ export const Summary = () => {
 };
 
 const StyledTable = styled.table`
-  width: 18rem;
+  width: ${({ theme }) => theme.sizes[320]};
 
-  * {
-    border-color: rgb(77, 90, 104) !important;
+  @media (max-width: ${({ theme }) => theme.breakpoints.xxxxl}) {
+    width: 100%;
   }
 `;
 
@@ -116,34 +116,34 @@ const StyledTableRow = styled.tr`
 `;
 
 const StyledTopRow = styled(StyledTableRow)`
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-top: 1px solid ${({ theme }) => theme.colors.border};
+  border-left: 1px solid ${({ theme }) => theme.colors.border};
+  border-right: 1px solid ${({ theme }) => theme.colors.border};
 `;
 
 const StyledBottomRow = styled(StyledTableRow)`
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
+  border-left: 1px solid ${({ theme }) => theme.colors.border};
+  border-right: 1px solid ${({ theme }) => theme.colors.border};
 `;
 
 const StyledMidRow = styled(StyledTableRow)`
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px solid ${({ theme }) => theme.colors.border};
+  border-right: 1px solid ${({ theme }) => theme.colors.border};
 `;
 
 const StyledTd = styled.td`
   text-align: left;
-  padding: 0.5rem;
-  color: white !important;
+  padding: ${({ theme }) => theme.sizes[4]};
+  color: ${({ theme }) => theme.colors.text} !important;
 
   b {
-    color: #03C1DB !important;
+    color: ${({ theme }) => theme.colors.primary} !important;
   }
 `;
 
 const StyledH2 = styled.h2`
-  color: white !important;
+  color: ${({ theme }) => theme.colors.text} !important;
 
-  padding-bottom: 1.5rem;
+  padding-bottom: ${({ theme }) => theme.sizes[24]};
 `;

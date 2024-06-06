@@ -14,7 +14,7 @@ const StyledHeader = styled.header`
   justify-content: center;
   align-items: center;
 
-  border-bottom: 1px solid rgb(77, 90, 104);
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   padding: 2.5rem 0;
 `;
 
