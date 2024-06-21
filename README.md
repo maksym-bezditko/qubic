@@ -11,7 +11,7 @@ This project is a web application that displays data from IPO bids using Syncfus
 
 ## Demo
 
-The website is deployed and can be accessed [here](https://trs-24.github.io/qubic-test/).
+The website is deployed and can be accessed [here](https://maksym-bezditko.github.io/qubic/).
 
 ## Features
 
@@ -33,5 +33,6 @@ These instructions will help you get a copy of the project up and running on you
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Trs-24/qubic-test
+git clone https://github.com/maksym-bezditko/qubic
 cd qubic-test
+```
