@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/qubic/static/css/main.f756ca44.css",
+    "main.js": "/qubic/static/js/main.3a3e2145.js",
+    "index.html": "/qubic/index.html",
+    "main.f756ca44.css.map": "/qubic/static/css/main.f756ca44.css.map",
+    "main.3a3e2145.js.map": "/qubic/static/js/main.3a3e2145.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f756ca44.css",
+    "static/js/main.3a3e2145.js"
+  ]
+}
